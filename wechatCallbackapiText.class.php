@@ -11,7 +11,6 @@ class wechatCallbackapiTest
         	exit;
         }
     }
-
     public function responseMsg()
     {
 		//get post data, May be due to the different environments
@@ -59,7 +58,59 @@ class wechatCallbackapiTest
         	exit;
         }
     }
-		
+/**
+ *  @description:   返回图片给用户 
+ */
+  public function responseImg()
+    {
+        //get post data, May be due to the different environments
+        $postStr = $GLOBALS["HTTP_RAW_POST_DATA"];
+
+        //extract post data
+        if (!empty($postStr)){
+                /* libxml_disable_entity_loader is to prevent XML eXternal Entity Injection,
+                   the best way is to check the validity of xml by yourself */
+                libxml_disable_entity_loader(true);
+                $postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);
+                $fromUsername = $postObj->FromUserName;
+                $toUsername = $postObj->ToUserName;
+                $keyword = trim($postObj->Content);
+                $time = time();
+                $textTpl = "<xml>
+                            <ToUserName><![CDATA[%s]]></ToUserName>
+                            <FromUserName><![CDATA[%s]]></FromUserName>
+                            <CreateTime>%s</CreateTime>
+                            <MsgType><![CDATA[%s]]></MsgType>
+                            <Content><![CDATA[%s]]></Content>
+                            <FuncFlag>0</FuncFlag>
+                            </xml>";             
+                if(!empty( $keyword ))
+                {
+                    $msgType = "text";
+                    switch($keyword){
+                        case "1":
+                            $contentStr = "田雨晴喜欢刘放";
+                            break;
+                        case "2":
+                            $contentStr = "刘放喜欢田雨晴";
+                            break;
+                        default:
+                            $contentStr = $postStr;        
+                    }
+                    if(curl_init()){
+                        $contentStr = "支持curl库";
+                    }
+                    $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
+                    echo $resultStr;
+                }else{
+                    echo "Input something...";
+                }
+
+        }else {
+            echo "";
+            exit;
+        }
+    }		
 	private function checkSignature()
 	{
         // you must define TOKEN by yourself
