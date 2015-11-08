@@ -4,10 +4,14 @@
  */
 require_once dirname(__FILE__) . '/WeChatCallBack.php';
 class WeChatCallBackFruit extends WeChatCallBack {
+  
   public function process() {
     if($this->_msgType != 'text') {
       return $this->makeHint("只支持文本消息！");
     }
+    //测试获取accesstoken成功
+    //$result = getAccessToken();
+
     switch((string)trim($this->_postObject->Content)){
       case "2":
         $contentStr = "田雨晴喜欢刘放";

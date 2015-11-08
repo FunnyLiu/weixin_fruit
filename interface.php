@@ -31,6 +31,13 @@ if(checkSignature()) {
   //没写完interface_log(ERROR, EC_OTHER)
 }
 
+/**
+ * @desctiption:            判断调用哪个公众号
+ * @param $toUserName:      公众号id
+ * @return                  公众号对象实体
+ * @author：                田雨晴
+ * @date:                   2015/11/8 13:44
+ */
 function getWeChatObj($toUserName) {
   if($toUserName == USERNAME_FRUIT) {
     require_once dirname(__FILE__) . '/class/WeChatCallBackFruit.php';

@@ -4,6 +4,7 @@
  */
 
 require_once dirname(__FILE__) . '/../common/GlobalDefine.php';
+require_once dirname(__FILE__) . '/../common/GlobalFunctions.php';
 
 class WeChatCallBack {
   protected $_postObject;
