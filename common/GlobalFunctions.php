@@ -3,6 +3,7 @@
  * 全局函数
  */
 require_once dirname(__FILE__) . '/GlobalDefine.php';
+require_once dirname(__FILE__) . 'MiniLog.php';
 //获取来源ip
 function getIp() {
 
