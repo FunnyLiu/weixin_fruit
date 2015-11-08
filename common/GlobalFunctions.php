@@ -2,8 +2,8 @@
 /**
  * 全局函数
  */
-require_once dirname(__FILE__) . '/common/GlobalDefine.php';
+require_once dirname(__FILE__) . '/GlobalDefine.php';
 //获取来源ip
-getIp() {
+function getIp() {
 
 }

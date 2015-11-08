@@ -24,7 +24,7 @@ class WeChatCallBack {
     return $resultStr;
   }
 
-  public funtion init($postObj) {
+  public function init($postObj) {
     //获取参数
     $this->_postObject = $postObj;
     if($this->_postObject == false) {

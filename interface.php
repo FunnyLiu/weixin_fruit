@@ -1,4 +1,5 @@
 <?php
+header("Content-Type:text/html;chartset=utf-8");
 require_once dirname(__FILE__) . '/common/GlobalFunctions.php';
 function checkSignature() {
   $signature = $_GET["signature"];
@@ -20,8 +21,8 @@ function checkSignature() {
 }
 
 if(checkSignature()) {
-  if($GET["echostr"]) {
-    echo $GET["echostr"];
+  if($_GET["echostr"]) {
+    echo $_GET["echostr"];
     exit(0);
   }
 }else {
@@ -42,12 +43,18 @@ function getWeChatObj($toUserName) {
 function exitErrorInput() {
   echo 'error input!';
   //各种日志...
+  exit(0);
 }
 
 //读取post数据
 $postStr = file_get_contents("php://input");
 #这里写postStr的日志...
 
+//如果没有post数据
+if(empty($postStr)) {
+  #日志...
+  exitErrorInput();
+}
 //获取参数
 $postObj = simplexml_load_string($postStr);
 $toUserName = (string)trim($postObj->ToUserName);
