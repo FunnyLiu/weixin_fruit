@@ -15,4 +15,10 @@ define('HINT_TPL', "<xml>
 <Content>%s</Content>
 <FuncFlag>0</FuncFlag>
 </xml>");
+//定义日志级别
+define("DEBUG", "DEBUG");
+define("INFO", "INFO");
+define("ERROR", "ERROR");
+//根目录
+define("ROOT_PATH", __FILE__ . "/..")
 ?>
