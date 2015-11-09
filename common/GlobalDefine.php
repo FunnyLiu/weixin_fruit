@@ -6,7 +6,8 @@ define("APPSECRET", "d71a0d4fc9bd2aaf22c3e78a59f2948c");
 //水果公众号的toUserName
 define("USERNAME_FRUIT", "gh_c85239648587");
 //默认错误提示
-define('HINT_NOT_IMPLEMENT', '未实现'); 
+define('HINT_NOT_IMPLEMENT', '未实现');
+//返回消息模板
 define('HINT_TPL', "<xml>
 <ToUserName>%s</ToUserName>
 <FromUserName>%s</FromUserName>
@@ -19,6 +20,10 @@ define('HINT_TPL', "<xml>
 define("DEBUG", "DEBUG");
 define("INFO", "INFO");
 define("ERROR", "ERROR");
+define("STAT", "STAT");
 //根目录
-define("ROOT_PATH", __FILE__ . "/..")
+define("ROOT_PATH", dirname(__FILE__) . "/..");
+//错误码
+define("EC_OK", "200");
+define("EC_OTHER", "403");
 ?>

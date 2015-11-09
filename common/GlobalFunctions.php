@@ -3,7 +3,7 @@
  * 全局函数
  */
 require_once dirname(__FILE__) . '/GlobalDefine.php';
-//require_once dirname(__FILE__) . 'MiniLog.php';
+require_once dirname(__FILE__) . '/MiniLog.php';
 //获取来源ip
 function getIp() {
 
@@ -81,12 +81,16 @@ function curlPost($url,$post){
 }
 
 /**
- * 默认打开所有的日志文件
+ * @description 判断该级别的是否打开 默认打开所有的日志文件
  * ERROR、INFO、DEBUG日志级别对应的关闭标记文件分别为NO_ERROR、NO_INFO、NO_DEBUG
+ * @param string $logLevel 日志级别
+ * @return true为打开，false为关闭
+ * @author 田雨晴
+ * @date 2015/11/9 10:10
  */
 function isLogLevelOff($logLevel) {
   //ROOT_PATH在GlobalDefine.php中定义为当前文件的上一级目录
-  $switchFile = ROOT_PATH . '/log/' . 'NO_' . $logLevel;
+  $switchFile = ROOT_PATH . '/log' . 'NO_' . $logLevel;
   if(file_exists($switchFile)) {
     return true;
   }else {
@@ -100,6 +104,8 @@ function isLogLevelOff($logLevel) {
  * @param string $logLevel 级别
  * @param int $errorCode 错误码
  * @param string $logMessage 日志内容
+ * @author 田雨晴
+ * @date 2015/11/9 10:20
  */
 function wxmp_log($confName, $logLevel, $errorCode, $logMessage="no error msg") {
   if(isLogLevelOff($logLevel)) {
@@ -111,7 +117,7 @@ function wxmp_log($confName, $logLevel, $errorCode, $logMessage="no error msg") 
   $function = '';//调用wxmp_log的函数名
   $file = '';//调用wxmp_log的文件名
   $line = '';//调用wxmp_log的行号
-  foreach ($set as $item) {
+  foreach ($st as $item) {
     if($file) {
       $function = $item['function'];
       break;
@@ -132,16 +138,21 @@ function wxmp_log($confName, $logLevel, $errorCode, $logMessage="no error msg") 
     $prefix = "[$logLevel]";
   }
   $logFileName = $confName . "_" . strtolower($logLevel);
-  MiniLog::instance(ROOT_PATH . "/log/")->log($logFileName, $prefix . $logMessage);
+  MiniLog::instance(ROOT_PATH . "/log")->log($logFileName, $prefix . $logMessage);
   if(isLogLevelOff("DEBUG") || $logLevel == "DEBUG") {
     return;
   }else {
-    MiniLog::instance(ROOT_PATH . "/log/")->log($confName . "_" . "debug", $prefix . $logMessage);
+    MiniLog::instance(ROOT_PATH . "/log")->log($confName . "_" . "debug", $prefix . $logMessage);
   }
 }
 
 /**
- * 实际用到的日志函数
+ * @description 实际用于使用的日志函数
+ * @param string $logLevel 日志级别
+ * @param string $errorCode 自定义的错误码
+ * @param string $logMessage 日志信息
+ * @author 田雨晴
+ * @date 2015/11/9 11:12
  */
 function interface_log($logLevel, $errorCode, $logMessage = "no error msg") {
   wxmp_log('interface', $logLevel, $errorCode, $logMessage);

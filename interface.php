@@ -1,6 +1,13 @@
 <?php
 header("Content-Type:text/html;chartset=utf-8");
 require_once dirname(__FILE__) . '/common/GlobalFunctions.php';
+
+/**
+ * @description 判断是否是微信服务器
+ * @return true为是，false为不是
+ * @author 田雨晴
+ * @date 2015/11/8 13:30
+ */
 function checkSignature() {
   $signature = $_GET["signature"];
   $timestamp = $_GET["timestamp"];
@@ -28,11 +35,12 @@ if(checkSignature()) {
 }else {
   //恶意请求：获取来源ip，并写日志...
   //$ip = getIp();
-  //没写完interface_log(ERROR, EC_OTHER)
+  interface_log(ERROR, EC_OTHER, 'malicious:' . '$ip');
+  exit(0);
 }
 
 /**
- * @desctiption:            判断调用哪个公众号
+ * @description:            判断调用哪个公众号
  * @param $toUserName:      公众号id
  * @return                  公众号对象实体
  * @author：                田雨晴
@@ -47,34 +55,52 @@ function getWeChatObj($toUserName) {
   return new WeChatCallBack();
 }
 
+/**
+ * @description 输入消息错误记录日志
+ * @author 田雨晴
+ * @date 2015/11/8 14:00
+ */
 function exitErrorInput() {
   echo 'error input!';
-  //各种日志...
+  interface_log(INFO, EC_OK, "***** interface request end *****");
+  interface_log(INFO, EC_OK, "*********************************");
+  interface_log(INFO, EC_OK, "");
   exit(0);
 }
 
 //读取post数据
 $postStr = file_get_contents("php://input");
-#这里写postStr的日志...
+
+interface_log(INFO, EC_OK, "");
+interface_log(INFO, EC_OK, "************************************");
+interface_log(INFO, EC_OK, "****** interface request start *****");
+interface_log(INFO, EC_OK, 'request:' . $postStr);
+interface_log(INFO, EC_OK, 'get:' . var_export($_GET, true));
 
 //如果没有post数据
 if(empty($postStr)) {
-  #日志...
+  interface_log(ERROR, EC_OK, "error input!");
   exitErrorInput();
 }
 //获取参数
 $postObj = simplexml_load_string($postStr);
 $toUserName = (string)trim($postObj->ToUserName);
 if(!$toUserName) {
-  #日志...
+  interface_log(ERROR, EC_OK, "error input!");
+  exitErrorInput();
 }else {
   $wechatObj = getWeChatObj($toUserName);
 }
 $ret = $wechatObj->init($postObj);
 if(!$ret) {
-  #日志...
+  interface_log(ERROR, EC_OK, "error input!");
+  exitErrorInput();
 }
 $retStr = $wechatObj->process();
-#日志...
+interface_log(INFO, EC_OK, "response:" . $retStr);
 echo $retStr;
-#日志...
+interface_log(INFO, EC_OK, "****** interface request end *****");
+interface_log(INFO, EC_OK, "**********************************");
+interface_log(INFO, EC_OK, "");
+
+?>

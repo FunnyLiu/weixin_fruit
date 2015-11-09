@@ -1,11 +1,15 @@
 <?php
-class Miniphp {
+/**
+ * 日志类
+ */
+class MiniLog {
   private static $_instance;//单例
   private $_path;//日志目录
   private $_pid;//进程id
   private $_handleArr;//保存不同日志级别文件fd
+
   /**
-   * 构造函数
+   * @description 构造函数
    * @param $path 日志对象对应的日志目录
    */
   function __construct($path) {
@@ -22,7 +26,7 @@ class Miniphp {
    */
   public static function instance($path = '/tmp') {
     if(!(self::$_instance instanceof self)) {
-      self:::$_instance = new self($path);
+      self::$_instance = new self($path);
     }
     return self::$_instance;
   }
