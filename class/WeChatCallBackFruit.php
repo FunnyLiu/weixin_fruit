@@ -13,8 +13,11 @@ class WeChatCallBackFruit extends WeChatCallBack {
       case "voice":
         $result = $this->receiveVoice();
         break;
+      case "event":
+        $result = $this->receiveEvent(); 
+        break;
       default:
-        $result = $this->makeHint("只支持文本和语音消息！");
+        $result = $this->makeHint("本公众号只支持文本和语音消息！");
     }
       return $result;
   } 
@@ -55,6 +58,24 @@ class WeChatCallBackFruit extends WeChatCallBack {
           break;
         default:
           $contentStr = "请说苹果或者草莓";
+      }
+      return $this->makeHint($contentStr);
+  }
+   /**
+   * @description 接受事件作出的响应
+   * @return 返回文本值
+   * @author 刘放
+   * @date 2015/11/9 20:24
+   */   
+  public function receiveEvent(){
+      switch ($this->_event) {
+        case 'subscribe':
+          $contentStr = "欢迎关注本订阅号！本订阅号有以下几点功能：1.呵呵。2.哈哈。3.嘻嘻。";
+          break;
+        case 'unsubscribe':
+          $contentStr = "如果您有不满意的地方可以提建议到2281858473@qq.com。谢谢您的陪伴";
+        break;  
+        default:
       }
       return $this->makeHint($contentStr);
   }

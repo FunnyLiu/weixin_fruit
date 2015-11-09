@@ -39,6 +39,7 @@ class WeChatCallBack {
     $this->_mediaId = (int)trim($this->_postObject->MediaId) ? (int)trim($this->_postObject->MediaId) : '';
     $this->_format = (string)trim($this->_postObject->Format) ? (int)trim($this->_postObject->Format) : '';
     $this->_recognition = (string)trim($this->_postObject->Recognition) ? (string)trim($this->_postObject->Recognition) : '';//语音信息
+    $this->_event = (string)trim($this->_postObject->Event) ? (string)trim($this->_postObject->Event) : '';
     $this->_time = time();
     if (!($this->_fromUserName && $this->_toUserName && $this->_msgType)) {
       return false;
