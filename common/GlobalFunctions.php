@@ -16,13 +16,13 @@ function getIp() {
  */
 function getAccessToken(){
 	$mem = new Memcached();
-	if(!$mem->addServer('127.0.0.1',11211)){
+	if(!$mem->addServer('121.42.160.243',11211)){
 		return "连接memcached失败";
 	}
 	$access_token = $mem->get('access_token');
 	//如果memcached中缓存时间过期或者没有accesstoken，则重新请求
 	if(!$access_token){
-		$token_access_url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=".APPID."&secret=".APPSECRET;
+		$token_access_url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=" . APPID . "&secret=" . APPSECRET;
 		$output = curlGet($token_access_url);
 		//接受一个 JSON 格式的字符串并且把它转换为 PHP 变量
 		$result = json_decode($output, true);
