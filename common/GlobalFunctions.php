@@ -3,7 +3,7 @@
  * 全局函数
  */
 require_once dirname(__FILE__) . '/GlobalDefine.php';
-require_once dirname(__FILE__) . 'MiniLog.php';
+//require_once dirname(__FILE__) . 'MiniLog.php';
 //获取来源ip
 function getIp() {
 
@@ -146,3 +146,18 @@ function wxmp_log($confName, $logLevel, $errorCode, $logMessage="no error msg") 
 function interface_log($logLevel, $errorCode, $logMessage = "no error msg") {
   wxmp_log('interface', $logLevel, $errorCode, $logMessage);
 }
+
+/**
+ * @description 获取微信服务器ip
+ * @return 返回微信服务器ip地址
+ * @author 刘放
+ * @date 2015/11/9 18:26
+ */
+ function getWeiXinIp(){
+ 	$access_token = getAccessToken();
+ 	$url = "https://api.weixin.qq.com/cgi-bin/getcallbackip?access_token=".$access_token;
+ 	$output = curlGet($url);
+ 	$result = json_decode($output, true);
+	$wxIP = $result['ip_list'][0];
+	return $wxIP;
+ }
