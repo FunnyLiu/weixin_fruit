@@ -15,7 +15,7 @@ function getIp() {
  * @date 2015/11/8 14:40
  */
 function getAccessToken(){
-	$mem = new Memcached();
+	$mem = new Memcache();
 	if(!$mem->addServer('121.42.160.243',11211)){
 		return "连接memcached失败";
 	}
@@ -27,7 +27,7 @@ function getAccessToken(){
 		//接受一个 JSON 格式的字符串并且把它转换为 PHP 变量
 		$result = json_decode($output, true);
 		$access_token = $result['access_token'];
-		$mem->set('access_token',$access_token,7200);
+		$mem->set('access_token',$access_token, false, 7200);
 	}
 	return $access_token;	
 }
