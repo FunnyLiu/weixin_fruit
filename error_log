@@ -1,0 +1,146 @@
+[Sun Nov 15 03:23:02 2015] [notice] Digest: generating secret for digest authentication ...
+[Sun Nov 15 03:23:02 2015] [notice] Digest: done
+PHP Warning:  Module 'mongo' already loaded in Unknown on line 0
+[Sun Nov 15 03:23:02 2015] [notice] Apache/2.2.15 (Unix) DAV/2 PHP/5.3.3 configured -- resuming normal operations
+[Sun Nov 15 03:57:12 2015] [error] [client 82.118.237.107] Directory index forbidden by Options directive: /var/www/html/
+[Sun Nov 15 05:09:22 2015] [error] [client 120.197.244.31] Directory index forbidden by Options directive: /var/www/html/
+[Sun Nov 15 05:39:16 2015] [error] [client 121.42.0.34] Directory index forbidden by Options directive: /var/www/html/
+[Sun Nov 15 06:33:02 2015] [error] [client 171.208.221.246] Directory index forbidden by Options directive: /var/www/html/
+[Sun Nov 15 07:22:26 2015] [error] [client 61.160.213.110] File does not exist: /var/www/html/chs
+[Sun Nov 15 10:32:59 2015] [error] [client 183.60.48.25] Directory index forbidden by Options directive: /var/www/html/
+[Sun Nov 15 14:10:37 2015] [error] [client 40.117.44.123] Directory index forbidden by Options directive: /var/www/html/
+[Sun Nov 15 14:30:38 2015] [error] [client 171.208.221.246] Directory index forbidden by Options directive: /var/www/html/
+[Sun Nov 15 15:18:01 2015] [error] [client 120.132.94.10] Directory index forbidden by Options directive: /var/www/html/
+[Sun Nov 15 18:32:55 2015] [error] [client 183.60.48.25] Directory index forbidden by Options directive: /var/www/html/
+[Mon Nov 16 02:21:29 2015] [error] [client 183.60.48.25] Directory index forbidden by Options directive: /var/www/html/
+[Mon Nov 16 02:37:51 2015] [error] [client 14.63.73.39] Directory index forbidden by Options directive: /var/www/html/
+[Mon Nov 16 04:41:07 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpmyadmin
+[Mon Nov 16 04:41:07 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin
+[Mon Nov 16 04:41:07 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/PMA
+[Mon Nov 16 04:41:07 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/admin
+[Mon Nov 16 04:41:07 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/dbadmin
+[Mon Nov 16 04:41:07 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/mysql
+[Mon Nov 16 04:41:07 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/myadmin
+[Mon Nov 16 04:41:07 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpmyadmin2
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin2
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/php-my-admin
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.2.3
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.2.6
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.5.1
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.5.4
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.5.5-rc1
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.5.5-rc2
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.5.5
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.5.5-pl1
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.5.6-rc1
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.5.6-rc2
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.5.6
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.5.7
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.5.7-pl1
+[Mon Nov 16 04:41:08 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.0-alpha
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.0-alpha2
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.0-beta1
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.0-beta2
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.0-rc1
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.0-rc2
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.0-rc3
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.0
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.0-pl1
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.0-pl2
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.0-pl3
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.1-rc1
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.1-rc2
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.1
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.1-pl1
+[Mon Nov 16 04:41:09 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.1-pl2
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.1-pl3
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.2-rc1
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.2-beta1
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.2-rc1
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.2
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.2-pl1
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.3
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.3-rc1
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.3
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.3-pl1
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.4-rc1
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.4-pl1
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.4-pl2
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.4-pl3
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.4-pl4
+[Mon Nov 16 04:41:10 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.6.4
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.7.0-beta1
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.7.0-rc1
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.7.0-pl1
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.7.0-pl2
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.7.0
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.8.0-beta1
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.8.0-rc1
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.8.0-rc2
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.8.0
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.8.0.1
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.8.0.2
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.8.0.3
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.8.0.4
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.8.1-rc1
+[Mon Nov 16 04:41:11 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.8.1
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpMyAdmin-2.8.2
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/sqlmanager
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/mysqlmanager
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/p
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/PMA2005
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/pma2005
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpmanager
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/php-myadmin
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/phpmy-admin
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/webadmin
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/sqlweb
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/websql
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/webdb
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/mysqladmin
+[Mon Nov 16 04:41:12 2015] [error] [client 210.51.56.177] File does not exist: /var/www/html/mysql-admin
+[Mon Nov 16 04:47:04 2015] [error] [client 61.160.213.110] File does not exist: /var/www/html/chs
+[Mon Nov 16 09:24:10 2015] [error] [client 171.208.221.246] Directory index forbidden by Options directive: /var/www/html/
+[Mon Nov 16 10:22:24 2015] [error] [client 183.60.48.25] Directory index forbidden by Options directive: /var/www/html/
+[Mon Nov 16 10:36:41 2015] [error] [client 113.57.19.236] Directory index forbidden by Options directive: /var/www/html/, referer: https://www.baidu.com/index.php?tn=02049043_14_pg
+[Mon Nov 16 10:36:41 2015] [error] [client 113.57.19.235] File does not exist: /var/www/html/favicon.ico, referer: http://121.42.160.243/
+[Mon Nov 16 10:36:46 2015] [error] [client 113.57.19.246] File does not exist: /var/www/html/favicon.ico
+[Mon Nov 16 10:41:46 2015] [error] [client 113.57.176.2] PHP Warning:  require_once(/var/www/html/weixing_fruit/common/mongoClass.php): failed to open stream: No such file or directory in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 10:41:46 2015] [error] [client 113.57.176.2] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/weixing_fruit/common/mongoClass.php' (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 10:41:46 2015] [error] [client 113.57.176.2] PHP Warning:  require_once(/var/www/html/weixing_fruit/common/mongoClass.php): failed to open stream: No such file or directory in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 10:41:46 2015] [error] [client 113.57.176.2] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/weixing_fruit/common/mongoClass.php' (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 10:41:50 2015] [error] [client 113.57.176.2] PHP Warning:  require_once(/var/www/html/weixing_fruit/common/mongoClass.php): failed to open stream: No such file or directory in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 10:41:50 2015] [error] [client 113.57.176.2] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/weixing_fruit/common/mongoClass.php' (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 10:47:48 2015] [error] [client 113.57.19.236] PHP Warning:  require_once(/var/www/html/weixing_fruit/common/mongoClass.php): failed to open stream: No such file or directory in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 10:47:48 2015] [error] [client 113.57.19.236] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/weixing_fruit/common/mongoClass.php' (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 11:17:34 2015] [error] [client 113.57.19.240] PHP Warning:  require_once(/var/www/html/weixing_fruit/common/mongoClass.php): failed to open stream: No such file or directory in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 11:17:34 2015] [error] [client 113.57.19.240] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/weixing_fruit/common/mongoClass.php' (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 11:17:58 2015] [error] [client 113.57.19.244] PHP Warning:  require_once(/var/www/html/weixing_fruit/common/mongoClass.php): failed to open stream: No such file or directory in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 11:17:58 2015] [error] [client 113.57.19.244] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/weixing_fruit/common/mongoClass.php' (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 11:18:19 2015] [error] [client 113.57.19.234] PHP Warning:  require_once(/var/www/html/weixing_fruit/common/mongoClass.php): failed to open stream: No such file or directory in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 11:18:19 2015] [error] [client 113.57.19.234] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/weixing_fruit/common/mongoClass.php' (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 11:19:30 2015] [error] [client 113.57.19.234] PHP Warning:  require_once(/var/www/html/weixing_fruit/common/mongoClass.php): failed to open stream: No such file or directory in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 11:19:30 2015] [error] [client 113.57.19.234] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/weixing_fruit/common/mongoClass.php' (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/weixing_fruit/mongotest.php on line 2
+[Mon Nov 16 11:19:40 2015] [error] [client 61.135.190.72] Directory index forbidden by Options directive: /var/www/html/, referer: http://www.baidu.com/s?wd=www
+[Mon Nov 16 11:57:40 2015] [error] [client 121.42.0.33] Directory index forbidden by Options directive: /var/www/html/
+[Mon Nov 16 14:18:36 2015] [error] [client 113.57.19.236] PHP Fatal error:  Call to undefined method MongoClass::echoName() in /var/www/html/weixing_fruit/mongotest.php on line 6
+[Mon Nov 16 14:23:20 2015] [error] [client 113.57.19.246] PHP Fatal error:  Call to undefined method MongoDB::echoName() in /var/www/html/weixing_fruit/mongotest.php on line 6
+[Mon Nov 16 14:34:15 2015] [error] [client 113.57.176.2] PHP Fatal error:  Call to undefined method Mongo::listAllDBs() in /var/www/html/weixing_fruit/mongotest.php on line 7
+[Mon Nov 16 14:35:16 2015] [error] [client 113.57.19.238] PHP Fatal error:  Call to undefined method Mongo::listAllDBs() in /var/www/html/weixing_fruit/mongotest.php on line 7
+[Mon Nov 16 14:40:59 2015] [error] [client 113.57.19.240] PHP Fatal error:  Call to undefined method MongoClass::listDBs() in /var/www/html/weixing_fruit/common/MongoClass.php on line 28
+[Mon Nov 16 14:41:39 2015] [error] [client 113.57.19.236] PHP Notice:  Undefined property: MongoClass::$mongo in /var/www/html/weixing_fruit/common/MongoClass.php on line 28
+[Mon Nov 16 14:41:39 2015] [error] [client 113.57.19.236] PHP Fatal error:  Call to a member function listDBs() on a non-object in /var/www/html/weixing_fruit/common/MongoClass.php on line 28
+[Mon Nov 16 14:42:19 2015] [error] [client 113.57.19.238] PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR in /var/www/html/weixing_fruit/common/MongoClass.php on line 28
+[Mon Nov 16 14:48:38 2015] [error] [client 113.57.19.245] PHP Fatal error:  Call to undefined method MongoClass::listDBs() in /var/www/html/weixing_fruit/common/MongoClass.php on line 28
+[Mon Nov 16 15:21:39 2015] [error] [client 113.57.19.238] PHP Parse error:  syntax error, unexpected T_VARIABLE in /var/www/html/weixing_fruit/common/MongoClass.php on line 48
+[Mon Nov 16 15:22:46 2015] [error] [client 113.57.176.2] PHP Notice:  Undefined variable: resule in /var/www/html/weixing_fruit/common/MongoClass.php on line 50
+[Mon Nov 16 15:22:46 2015] [error] [client 113.57.176.2] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/weixing_fruit/common/MongoClass.php on line 50
+[Mon Nov 16 15:25:31 2015] [error] [client 113.57.19.244] PHP Notice:  Undefined variable: resule in /var/www/html/weixing_fruit/common/MongoClass.php on line 50
+[Mon Nov 16 15:25:31 2015] [error] [client 113.57.19.244] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/weixing_fruit/common/MongoClass.php on line 50
+[Mon Nov 16 15:30:03 2015] [error] [client 113.57.176.2] PHP Fatal error:  Call to undefined method MongoClass::echoName() in /var/www/html/weixing_fruit/mongotest.php on line 5
+[Mon Nov 16 16:16:31 2015] [error] [client 61.160.213.110] File does not exist: /var/www/html/chs
+[Mon Nov 16 16:16:53 2015] [error] [client 113.57.19.235] PHP Warning:  MongoCollection::find(): expects parameter 1 to be an array or object, string given in /var/www/html/weixing_fruit/common/MongoClass.php on line 64
+[Mon Nov 16 16:16:53 2015] [error] [client 113.57.19.235] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/weixing_fruit/mongotest.php on line 7
+[Mon Nov 16 16:19:09 2015] [error] [client 113.57.19.244] PHP Notice:  Undefined variable: attr in /var/www/html/weixing_fruit/mongotest.php on line 8
+[Mon Nov 16 16:19:09 2015] [error] [client 113.57.19.244] PHP Notice:  Undefined index:  in /var/www/html/weixing_fruit/mongotest.php on line 8

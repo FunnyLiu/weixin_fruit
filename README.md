@@ -32,3 +32,9 @@ class/WeChatCallBack.Fruit.php      :水果公众号
 interface.php                       :接入脚本
 
 simulate_request.php                :模拟微信发消息
+
+
+---
+##**错误调试**
+linux上apache错误日志位置
+/var/log/httpd

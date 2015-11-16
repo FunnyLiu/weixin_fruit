@@ -1,28 +1,14 @@
 <?php
-$mongo = new Mongo();
-//$alldb = $mongo->listDBs();//获取所有数据库名称
-$db = $mongo->fruitdb;
-//$result = $db->fruit->count();//获取数量
-//echoName($db);//输出name
-	$arrayList =array(
-		array("name"=>"lflf","age"=>4),
-		array("name"=>"tyqtyq","age"=>5),
-		);
+require_once dirname(__FILE__) . '/common/MongoClass.php';
 
-	insertFruit($db,$arrayList);
-//$db->fruit->insert(array("name"=>"lflf","age"=>1));
-/**
- * @description 批量输出fruit文档中的name属性
- * @param $db 选择的数据库名称
- * @author 刘放
- * @date 2015/11/11 21:36
- */
-function echoName($db){
-	$result = $db->fruit->find();
-	foreach ($result as $item) {
-		echo $item["name"].'<br>';
-	}
-}
+$mongo = MongoClass::init();
+//查询名称为苹果的数据
+$data = $mongo->find(array("name"=>"苹果"));
+  	echo '<pre>';
+  	print_r($data);//成功获取
+  	echo '<pre>';
+//insertFruit($db,$data);
+
 /**
  * @description 批量插入fruit文档中
  * @param $db 选择的数据库名称
