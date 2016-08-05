@@ -9,7 +9,7 @@ sort($tmpArr, SORT_STRING);
 $tmpStr = implode($tmpArr);
 $tmpStr = sha1($tmpStr);
  
-$token_access_url = "http://127.0.0.1:81/weixing_fruit/interface.php?signature=" . $tmpStr . "&timestamp=" . $timestamp . "&nonce=" . $nonce . '&echostr=';
+$token_access_url = "http://127.0.0.1:81/test2/WeiXin_Fruit/weixing_fruit/interface.php?signature=" . $tmpStr . "&timestamp=" . $timestamp . "&nonce=" . $nonce . '&echostr=';
 
 $post_data = '<xml>
 <ToUserName><![CDATA[gh_c85239648587]]></ToUserName>
